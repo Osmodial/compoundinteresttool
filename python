@@ -1,0 +1,14 @@
+ia= input("How many money do you want to invest? ")
+fa= 0
+ffa= 0
+mt=  input("How many months? ")
+
+fa = float(ia) * (1.082 ** float(mt))
+
+print("my initial ammount is ",ia)
+print("my final ammount would be ", fa)
+print("and this was the month times ", mt)
+
+for x in range(int(mt)):
+    ffa = float(ia) * (1.082 ** float(x + 1))
+    print("at month",x+1, "you should have ",ffa)
